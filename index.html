@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Movie Search App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎬 Movie Explorer</h1>
+    <div class="search-section">
+      <input type="text" id="searchInput" placeholder="Search for a movie..." />
+      <button onclick="searchMovies()">Search</button>
+    </div>
+
+    <h2>🎲 Random Movies</h2>
+    <div id="randomMovies" class="movies-grid"></div>
+
+    <h2>🔍 Most Searched</h2>
+    <div id="mostSearched" class="movies-grid"></div>
+
+    <h2>🔥 Most Visited</h2>
+    <div id="mostVisited" class="movies-grid"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/appwrite@13.0.0"></script>
+  <script src="script.js"></script>
+</body>
+</html>
